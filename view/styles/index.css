@@ -1,27 +1,73 @@
 *{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
 }
+
+
+
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e5e2e2;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 13px;
+    padding: 5%;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+
+
+
+
+
+ /* Create Header and set Background image */
 .header{
     background-image: url('../img/b6.jpg');
     height: 800px;
     margin: -0.5%;
-
 }
 
+ /* Create Header and set small  Background image */
 .small-header{
     background-image: url('../img/b6.jpg');
     height: 400px;
     margin: -0.5%;
 }
 
+ /* Create header navbar */
 .header > .header-top, .small-header > .header-top{
     background-color: rgba(240, 248, 255, 0.603);
-    padding: 0%;
     display: flex;
     flex-direction: row;
     padding: 1%;
 }
 
+ /* Set items in left on navbar */
 .header-top-left{
     display: flex;
     position: relative;
@@ -30,24 +76,30 @@
     font-size: 33px;
 }
 
+ /* Set items in right on navbar */
 .header-top-right{
     display: flex;
     position: absolute;
     right: 30%;
+    flex-direction: row;
 }
-.header-top-right > a{
+
+ /* Style a links on navbar and organise them */
+.header-top-right > a, .dropdown {
     text-decoration: none;
     padding-top: 3% ;
     padding-left: 25%;
     color: black;
 }
 
+ /* Set bottom of header */
 .header-bottom{
     display: flex;
     flex-direction: column;
     padding-top: 17%;
 }
 
+ /* Set bottom of small header */
 .small-header-bottom{
     display: flex;
     flex-direction: column;
@@ -58,7 +110,7 @@
     font-weight: bold;
 }
 
-
+ /* Set bottom of header */
 .header-bottom-left{
     display: flex;
     position: relative;
@@ -67,6 +119,7 @@
     flex-direction: column;
 }
 
+ /* Set items in left on header bottom */
 .header-bottom-right{
     display: flex;
     position: absolute;
@@ -77,12 +130,13 @@
     width: 30%;
     text-align: right;
 }
+ /* Set text on left header bottom */
 .header-title{
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-
+ /* Set firs container */
 .container{
     display: flex;
     flex-direction: row;
@@ -92,18 +146,21 @@
     padding-bottom: 3%;
 }
 
+ /* Set  left of firs container */
 .container-left{
     display: flex;
     flex-direction: column;
     width: 33%;
 }
 
+ /* Set  center of firs container */
 .container-center{
     width: 33%;
     align-items: center;
     display: flex;
 }
 
+ /* Set  right of firs container */
 .container-right{
     display: flex;
     flex-direction: column;
@@ -112,15 +169,17 @@
 }
 
 
-
+ /* Configure a small card to display in the left on first container */
 .item-card-img{
     margin-bottom: 20%;
 }
 
+ /* set left configuration of card */
 .item-card-img .left{
     display: flex;
     flex-direction: row;
 }
+/* set right configuration of card */
 .item-card-img .right{
     display: flex;
     flex-direction: column;
@@ -131,13 +190,14 @@
     height: 150px;
     width: 150px;
 } 
-
+/* set picture of card */
 .item-card-img .right .span{
     margin-bottom: 15px;
     color: #0ddbd1;
     font-size: 20px;
 }
 
+/* set Text titles */
 .span{
     margin-bottom: 15px;
     font-size: 70px;
@@ -148,7 +208,7 @@
 
 
 
-
+/* Configure second container at Home  */
 .second-container{
     display: flex;
     flex-direction: row;
@@ -185,11 +245,11 @@
     flex-direction: column;
     padding: 5%;
 }
+/* end configuration of second container at Home */
 
 
 
-
-
+/* Configure third container at Home  */
 .third-container{
     display: flex;
     flex-direction: row; 
@@ -214,7 +274,7 @@
 .tc-card{
     display: flex;
     width: 30%;
-    box-shadow: 3px 5px #88888883;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: rgba(240, 248, 255, 0.603);
     align-items: center;
     flex-direction: column;
@@ -227,9 +287,11 @@
     font-size: 30px;
 }
 
+/* end configuration of thrid container at Home */
 
 
 
+/* Configure fourth container at Home  */
 .fourt-container{
     height: 500px;
     display: flex;
@@ -258,6 +320,8 @@
     display: flex;
     align-items: center;
 }
+
+/* end configuration of fourth container at Home */
 
 
 .five-container{
@@ -300,6 +364,7 @@
     
     
 }
+/* Set picture and blur with dark */
 .blur{
     background-color: rgba(0, 0, 0, 0.63);
     width: 100%;
@@ -309,6 +374,7 @@
     align-items: center;
     padding-left: 15%;
 }
+/* Container of Blur item */
 .blur-contain{
     display: flex;
     flex-direction: column;
@@ -316,7 +382,7 @@
     
 }
 
-
+/* Set footer style */
 footer{
     background-color: black;
     color: white;
@@ -345,6 +411,7 @@ footer{
     align-items: flex-end;
 }
 
+/* Set secon footer style */
 .second-footer{
     background-color: rgb(37, 36, 36);
     display: flex;
@@ -361,7 +428,7 @@ footer{
 
 
 
-
+/* Set Button style in page */
 button{
     border: none;
     background-color: #0ddbd1;
@@ -372,6 +439,7 @@ button{
     margin-top: 5%;
 }
 
+/* Set button with picture */
 .btn-img{
     padding: 1px;
     color: white;
