@@ -1,0 +1,38 @@
+.service-end-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0% 15%;
+    margin: 3% 0%;
+}
+
+.sec-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.sec-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sec-card{
+    width: 40%;
+    padding: 5% 0.5%;
+}
+
+.sec-card .text{
+    width: 95%;
+}
+
+.sec-right .span{
+    margin: 14%
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}

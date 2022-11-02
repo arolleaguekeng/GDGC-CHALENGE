@@ -4,16 +4,16 @@
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .g-container-top{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .g-container-top-left{
-    width: 30%;
+    width: 33.3%;
     display:flex;
     align-items: center;
 }
@@ -21,7 +21,7 @@
 .g-container-top-right{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 66.9%;
 }
 
 .g-container-bottom{
