@@ -293,6 +293,14 @@
     align-items: center;
 }
 
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
 .tc-right{
     width: 70%;
     display: flex;
