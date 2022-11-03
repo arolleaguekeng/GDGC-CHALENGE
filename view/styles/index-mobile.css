@@ -1,0 +1,212 @@
+/* Options for mobile Screens */
+@media screen and (max-width: 480px) {
+
+    /* Create Header and set Background image */
+    .header{
+        background-image: url('../img/b6.jpg');
+        height: 400px;
+        margin: -2%;
+        background-position: 45% 50%;
+        background-size: cover;
+        margin-bottom: 8%;
+    }
+    /* Set items in left on navbar */
+    .header-top-left{
+        display: flex;
+        position: relative;
+        left: 1%;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 31px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+    }
+    
+    /* Set bottom of header */
+    .header-bottom{
+        display: flex;
+        flex-direction: column;
+        padding-top: 17%;
+        letter-spacing: 2px;
+        align-items: center;
+        text-align: center;
+        margin: 10% 5%;
+        color: white;
+    }
+    
+    
+    
+    /* Create header navbar */
+    .header > .header-top, .small-header > .header-top{
+        background-color: rgba(240, 248, 255, 0.603);
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+    
+    .header > .header-top a, .small-header > .header-top a{
+        display: none;
+    }
+    
+    /* header title*/
+    .header-title{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+    /* Set bottom of header */
+    .header-bottom-left{
+        margin-bottom: 5%;
+    }
+    
+    
+    /* Set button with picture */
+    .btn-img{
+        padding: 1px;
+        color: white;
+        border-radius: 1px;
+        margin: 10px 0px;
+        width: 100%;
+        height: 50px;
+    }
+    
+    .btn-img > img{
+        width: 50px;
+        color: #d2d2d2;
+    }
+
+    /* set button picture */
+    .item-card-img .right .span{
+        margin: 10px 0px;
+        color: #0ddbd1;
+        font-size: 20px;
+    }
+
+    .item-card-img .right{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin-bottom: 100px;
+    }
+
+    .container-img{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* set Text titles */
+    .span{
+        margin-bottom: 1px;
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(71, 70, 70);
+    }
+    .container-center{
+        margin-top: 10%;
+    }
+
+    .container-right{
+        text-align: right;
+        margin: 5px;
+    }
+
+    .container-right-img{
+        align-items: center;
+    }
+    .second-container{
+        flex-direction: column;
+        margin-bottom: 30px;
+        
+    }
+    .second-container .blue-card,
+    .second-container .blue-card-center,
+    .second-container .blue-card-end{
+        width: 90%;
+        margin-right: 15px;
+    }
+
+    .third-container{
+        flex-direction: column;
+        margin-top: 60%;
+        margin-right: 2px;
+        margin-left: 2px;
+        text-align: center;
+    }
+    
+    .tc-right{
+        flex-direction: column;
+        width: 97%;
+    }
+    .tc-card, .sec-card{
+        width: 100%;
+    }
+
+    .tc-left{
+        width: 100%;
+    }
+    
+    .fourt-container{
+        flex-direction: column;
+    }
+
+    .fc-left{
+        background-size: cover;
+        width: 100%;
+    }
+    .fc-right{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .five-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fic-left{
+        width: 100%;
+    }
+    .fic-right{
+        width: 100%;
+    }
+    .fic-right2{
+        width: 105%;
+    }
+
+
+
+    .seven-container{
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: left;
+        padding-top: 30px;
+    }
+    .ff-left{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .ff-right{
+        position:static;
+        
+    }
+
+    .first-footer{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -15%;
+    }
+    
+}
