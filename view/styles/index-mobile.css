@@ -1,5 +1,5 @@
 /* Options for mobile Screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
 
     /* Create Header and set Background image */
     .header{
@@ -9,6 +9,17 @@
         background-position: 45% 50%;
         background-size: cover;
         margin-bottom: 8%;
+    }
+
+    .small-header{
+        background-image: url('../img/b6.jpg');
+        height: 350px;
+        margin: -1%;
+        background-position: 45% 50%;
+        background-size: cover;
+    }
+    .small-header-bottom{
+        padding-top: 30%;
     }
     /* Set items in left on navbar */
     .header-top-left{
@@ -20,18 +31,26 @@
         font-size: 31px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
     }
-    
+    .btn-menu{
+        display: flex;
+        position: absolute;
+        right: 2%;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        border-radius: 18px;
+    }
     /* Set bottom of header */
     .header-bottom{
         display: flex;
         flex-direction: column;
-        padding-top: 17%;
+        padding-top: 5%;
         letter-spacing: 2px;
         align-items: center;
         text-align: center;
         margin: 10% 5%;
         color: white;
     }
+    
     
     
     
@@ -133,7 +152,7 @@
 
     .third-container{
         flex-direction: column;
-        margin-top: 60%;
+        margin-top: 10%;
         margin-right: 2px;
         margin-left: 2px;
         text-align: center;
@@ -186,12 +205,24 @@
         text-align: center;
     }
 
+    .service-end-container{
+        flex-direction: column;
+    }
+    .sec-left{
+        flex-direction: column;
+        
+    }
+    .sec-card{
+        width: 100%;
+    }
+
     footer{
         flex-direction: column;
         padding-left: 4%;
         padding-right: 4%;
         text-align: left;
-        padding-top: 30px;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .ff-left{
         width: 100%;
@@ -200,6 +231,7 @@
 
     .ff-right{
         position:static;
+        margin-bottom: 10%;
         
     }
 
@@ -208,5 +240,6 @@
         align-items: center;
         margin-bottom: -15%;
     }
+
     
 }
