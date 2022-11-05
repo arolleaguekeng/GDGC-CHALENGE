@@ -17,6 +17,7 @@
         margin: -1%;
         background-position: 45% 50%;
         background-size: cover;
+        margin-bottom: 10px;
     }
     .small-header-bottom{
         padding-top: 30%;
@@ -114,6 +115,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin-top: 300px;
     }
 
 
@@ -240,6 +242,49 @@
         align-items: center;
         margin-bottom: -15%;
     }
+
+    .form-container{
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 0%;
+    }
+    .form-container > .cfc-right, .form-container > .cfc-left,.form-container > .cfc-center{
+        width: 100%;
+    }
+
+    .cfc-left,.form-container > .cfc-center{
+        height: 300px;
+    }
+    #gmap_canvas{
+        height: 250px;
+    }
+    /*To show map on page*/
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height: 250px;
+        width:100%;
+    }
+
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:250px;
+        width:100%;
+    }
+
+    .second-contact-container{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .span{
+        padding-top: 0%;
+    }
+
 
     
 }
