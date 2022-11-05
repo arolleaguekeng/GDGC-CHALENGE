@@ -32,6 +32,14 @@
         font-size: 31px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
     }
+    .mobile-menu a {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        border-radius: 18px;
+    }
     .btn-menu{
         display: flex;
         position: absolute;
@@ -39,7 +47,9 @@
         margin-top: 10px;
         letter-spacing: 2px;
         border-radius: 18px;
+        cursor:pointer;
     }
+
     /* Set bottom of header */
     .header-bottom{
         display: flex;
@@ -59,14 +69,49 @@
     .header > .header-top, .small-header > .header-top{
         background-color: rgba(240, 248, 255, 0.603);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-bottom: 5%;
     }
     
-    .header > .header-top a, .small-header > .header-top a{
+    .header > .header-top a, .small-header > .header-top a,.dropdown{
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        padding-bottom: 8%;
+    }
+    .header-top-right{
         display: none;
     }
+
+    .header > .header-top a :hover, .small-header > .header-top a :hover{
+        background-color: rgb(223, 8, 8);
+    }
     
+
+
+        
+    .header-top-right{
+        display: flex;
+        background-color: rgb(240, 248, 255);
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 40%;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        right: 2%;
+        top: 50px;
+        letter-spacing: 2px;
+        border-radius: 8px;
+    }
+    .dropdown-content a{
+        padding: 5% 0%;
+    }
+    .dropdown-content{
+        min-width: 90%;
+    }
     /* header title*/
     .header-title{
         font-size: 20px;

@@ -9,29 +9,45 @@
     <link rel="stylesheet" href="view/styles/index-mobile.css">
     <title>Home</title>
 </head>
-<body>
+<script>
+    document.addEventListener("load", function(){
+        document.getElementById("header-top-right").style.display = "none";
+        alert('dsddf');
+    });
+    
+    function showHideMenu() {
+    var x = document.getElementById("header-top-right");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+</script>
+<body onload="showHideMenu()">
     <!--Header Block-->
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
                 Sail-Trip
             </div>
-            <button class="btn-menu">Menu</button>
-            <div class="header-top-right">
-                <a href="#">Home</a>
-                <a href="view/pages/about.html">About</a>
-                <a href="view/pages/services.html">Services</a>
-                <div class="dropdown">
-                    <a class="dropbtn">Dropdown</a>
-                    <div class="dropdown-content">
-                      <a href="view/pages/galery.html">Galery</a>
-                      <a href="view/pages/blog.html">Blog</a>
+            <button class="btn-menu" id="btn-menu" onclick="showHideMenu();">Menu</button>
+            <div class="header-top-right" id="header-top-right">
+                <a href="#" id="header-top-right">Home</a>
+                <a href="view/pages/about.html" id="header-top-right">About</a>
+                <a href="view/pages/services.html" id="header-top-right">Services</a>
+                <div class="dropdown" id="header-top-right">
+                    <a class="dropbtn" id="header-top-right">Dropdown</a>
+                    <div class="dropdown-content" id="header-top-right">
+                      <a href="view/pages/galery.html" id="header-top-right">Galery</a>
+                      <a href="view/pages/blog.html" id="header-top-right">Blog</a>
                     </div>
                 </div>
-                <a href="view/pages/contact.html">ContactUs</a>
+                <a href="view/pages/contact.html" id="header-top-right">ContactUs</a>
             </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom" id="header-bottom">
             <div class="header-bottom-left">
                 <img src="view/img/icons/f.png" alt="" width="20px">
                 <img src="view/img/icons/t.png" alt="" width="20px">

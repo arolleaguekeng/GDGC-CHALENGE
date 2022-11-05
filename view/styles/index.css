@@ -21,6 +21,42 @@
     background-position: 5%;
 }
 
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #e5e2e2;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 13px;
+        padding: 5%;
+        border-radius: 5px;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: white;}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+
+
+
 /* Configure second container at Home  */
 .second-container{
     display: flex;
@@ -268,47 +304,6 @@ footer{
     
     
     
-    
-      /* The container <div> - needed to position the dropdown content */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      /* Dropdown Content (Hidden by Default) */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #e5e2e2;
-        min-width: 180px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        font-size: 13px;
-        padding: 5%;
-        border-radius: 5px;
-      }
-      
-      /* Links inside the dropdown */
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-    
-      
-      /* Change color of dropdown links on hover */
-      .dropdown-content a:hover {background-color: white;}
-      
-      /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {display: block;}
-      
-    
-    
-    
-    
-    
-    
      /* Create Header and set Background image */
     .header{
         background-image: url('../img/b6.jpg');
@@ -347,7 +342,6 @@ footer{
     }
     .btn-menu{
         display: none;
-
     }
     
      /* Style a links on navbar and organise them */
