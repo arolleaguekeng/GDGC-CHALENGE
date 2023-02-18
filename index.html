@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,44 +9,35 @@
     <link rel="stylesheet" href="view/styles/index-mobile.css">
     <title>Home</title>
 </head>
-<script>
-    document.addEventListener("load", function(){
-        document.getElementById("header-top-right").style.display = "none";
-        alert('dsddf');
-    });
-    
-    function showHideMenu() {
-    var x = document.getElementById("header-top-right");
-    if (x.style.display === "none") {
-        x.style.display = "flex";
-    } else {
-        x.style.display = "none";
-    }
-}
 
-</script>
-<body onload="showHideMenu()">
+<body>
     <!--Header Block-->
     <div class="header">
-        <div class="header-top">
-            <div class="header-top-left">
-                Sail-Trip
-            </div>
-            <button class="btn-menu" id="btn-menu" onclick="showHideMenu();">Menu</button>
-            <div class="header-top-right" id="header-top-right">
-                <a href="#" id="header-top-right">Home</a>
-                <a href="view/pages/about.html" id="header-top-right">About</a>
-                <a href="view/pages/services.html" id="header-top-right">Services</a>
-                <div class="dropdown" id="header-top-right">
-                    <a class="dropbtn" id="header-top-right">Dropdown</a>
-                    <div class="dropdown-content" id="header-top-right">
-                      <a href="view/pages/galery.html" id="header-top-right">Galery</a>
-                      <a href="view/pages/blog.html" id="header-top-right">Blog</a>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                menu
+            </label>
+            <label class="logo">Sail-Trip</label>
+
+            <ul>
+                <li><a href="#" id="header-top-right" class="active">Home</a></li>
+                <li><a href="view/pages/about.html" id="header-top-right">About</a></li>
+                <li><a href="view/pages/services.html" id="header-top-right">Services</a></li>
+                <li>
+                    <div class="dropdown" id="header-top-right">
+                        <a class="dropbtn" id="">Dropdown</a>
+                        <div class="dropdown-content" id="header-top-right">
+                            <a href="view/pages/galery.html" id="header-top-right">Galery</a>
+                            <a href="view/pages/blog.html" id="header-top-right">Blog</a>
+                        </div>
                     </div>
-                </div>
-                <a href="view/pages/contact.html" id="header-top-right">ContactUs</a>
-            </div>
-        </div>
+                </li>
+                <li><a href="view/pages/contact.html" id="header-top-right">ContactUs</a></li>
+            </ul>
+        </nav>
+
         <div class="header-bottom" id="header-bottom">
             <div class="header-bottom-left">
                 <img src="view/img/icons/f.png" alt="" width="20px">
@@ -72,11 +63,11 @@
         <div class="container-left">
             <div class="item-card-img">
                 <div class="left">
-                    <button class="btn-img"><img src="view/img/icons/handshake.png"  alt=""></button>
+                    <button class="btn-img"><img src="view/img/icons/handshake.png" alt=""></button>
                     <div class="right">
                         <span class="span">Fishing</span>
                         <span>Lorem ipsum dolor sit amet,</span>
-                        <span>eiusmod tempor incididunt ut</span>  
+                        <span>eiusmod tempor incididunt ut</span>
                         <span>labore et consectetur adipiscing</span>
                     </div>
                 </div>
@@ -87,21 +78,21 @@
                     <div class="right">
                         <span class="span">Sailing</span>
                         <span>Lorem ipsum dolor sit amet,</span>
-                        <span>eiusmod tempor incididunt ut</span>  
+                        <span>eiusmod tempor incididunt ut</span>
                         <span>labore et consectetur adipiscing</span>
                     </div>
-                    <button class="btn-img"><img src="view/img/icons/handshake.png"  alt=""></button>
+                    <button class="btn-img"><img src="view/img/icons/handshake.png" alt=""></button>
 
                 </div>
             </div>
 
             <div class="item-card-img">
                 <div class="left">
-                    <button class="btn-img"><img src="view/img/icons/handshake.png"  alt=""></button>
+                    <button class="btn-img"><img src="view/img/icons/handshake.png" alt=""></button>
                     <div class="right">
                         <span class="span">Water Sports</span>
                         <span>Lorem ipsum dolor sit amet,</span>
-                        <span>eiusmod tempor incididunt ut</span>  
+                        <span>eiusmod tempor incididunt ut</span>
                         <span>labore et consectetur adipiscing</span>
                     </div>
                 </div>
@@ -113,9 +104,12 @@
         </div>
         <div class="container-right">
             <span class="span">What Is Our History</span>
-            <span>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut Lorem ipsum 
-                dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod tempor
-                 incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+            <span>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut Lorem
+                ipsum
+                dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                sed do eiusmod tempor
+                incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore
+                et consectetur adipiscing
             </span>
         </div>
     </div>
@@ -133,9 +127,9 @@
         <div class="blue-card-center">
             <span class="title">250+</span>
             <span class="title">Water sports</span>
-                <span>Lorem ipsum dolor sit amet Lorem</span>
-                <span>ipsum dolor sit amet, eiusmod</span>
-                <span>tempor incididunt</span>
+            <span>Lorem ipsum dolor sit amet Lorem</span>
+            <span>ipsum dolor sit amet, eiusmod</span>
+            <span>tempor incididunt</span>
         </div>
 
         <div class="blue-card-end">
@@ -151,7 +145,7 @@
     <div class="third-container">
         <div class="tc-left">
             <span class="span">What We Offers & Services</span>
-            
+
         </div>
         <div class="tc-right">
             <div class="tc-card">
@@ -225,7 +219,7 @@
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -235,11 +229,13 @@
         <div class="fc-left">
             <div class="fc-left-body">
                 <span style="margin-bottom: 2%;">July 2020/7 Comments 5</span>
-                <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum dolor</span>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
+                <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum
+                    dolor</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
                 <button style="width: 150px;">Read More</button>
             </div>
-            
+
         </div>
         <div class="fc-right">
             <span class="span">
@@ -252,8 +248,10 @@
     <div class="five-container">
         <div class="fic-left">
             <span style="margin-bottom: 2%;">July 2020/7 Comments 5</span>
-            <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum dolor</span>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
+            <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum
+                dolor</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
             <button style="width: 150px;">Read More</button>
         </div>
         <div class="fic-right">
@@ -268,8 +266,10 @@
         </div>
         <div class="fic-left">
             <span style="margin-bottom: 2%;">July 2020/7 Comments 5</span>
-            <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum dolor</span>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
+            <span style="margin-bottom: 2%; color: #0ddbd1; font-weight: bold; font-size: 30px;">Lorem ipsum
+                dolor</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.Vestibulum nibh urna</span>
             <button style="width: 150px;">Read More</button>
         </div>
 
@@ -280,7 +280,8 @@
         <div class="blur">
             <div class="blur-contain">
                 <span class="span" style="color: white;">Let Make Booking Here</span>
-                <span style="margin-bottom: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna 
+                <span style="margin-bottom: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh
+                    urna
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum nibh urna
                 </span>
                 <span>
@@ -389,11 +390,12 @@
                 <img src="view/img/icons/i.png" alt="" width="20px">
             </div>
         </div>
-        
+
     </footer>
     <div class="second-footer">
         <span>© 2022 Sail-Trip . All Rights Reserved | Design by Aguekeng</span>
     </div>
-    
+
 </body>
+
 </html>
